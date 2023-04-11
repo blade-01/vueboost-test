@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import vue from '@vitejs/plugin-vue';
 import { VitePWA } from 'vite-plugin-pwa';
 import Inspector from 'vite-plugin-vue-inspector';
@@ -85,5 +85,14 @@ export default defineConfig({
       include: [path.resolve(__dirname, 'locales/**')]
     }),
     Icons({ compiler: 'vue3' })
-  ]
+  ],
+  // https://github.com/vitest-dev/vitest
+  test: {
+    include: ['test/**/*.test.ts'],
+    environment: 'jsdom',
+    deps: {
+      inline: ['@vue', '@vueuse', 'vue-demi']
+    }
+  },
+  root: '.'
 });
