@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:unit": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@iconify/json": "^2.2.0",
@@ -48,6 +51,7 @@
     "vite-plugin-pages": "^0.28.0",
     "vite-plugin-pwa": "^0.14.1",
     "vite-plugin-vue-inspector": "^2.0.4",
+    "vitest": "^0.30.0",
     "vue-tsc": "^1.0.11",
     "workbox-precaching": "^6.5.4"
   }
