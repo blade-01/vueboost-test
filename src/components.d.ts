@@ -26,6 +26,7 @@ declare module '@vue/runtime-core' {
     SampleForm: typeof import('./components/samples/SampleForm.vue')['default']
     SampleModal: typeof import('./components/samples/SampleModal.vue')['default']
     SampleTable: typeof import('./components/samples/SampleTable.vue')['default']
+    TheCounter: typeof import('./components/tests/TheCounter.vue')['default']
     TheFooter: typeof import('./components/navbar/TheFooter.vue')['default']
     TheHeader: typeof import('./components/navbar/TheHeader.vue')['default']
     TheSidebar: typeof import('./components/navbar/TheSidebar.vue')['default']
