@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Base Input > Renders the input value 1`] = `
+DOMWrapper {
+  "isDisabled": [Function],
+  "wrapperElement": <input
+    class="input-style"
+    id="Test"
+    type="text"
+  />,
+}
+`;
